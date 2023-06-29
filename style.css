@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@font-face {
+    font-family: 'norse-bold';
+    src: url(../Sign-up_form/Resources/Norse-Bold.otf);
+}
+
+:root{
+    --left-margin: 50px;
+    --right-margin: 200px;
+    --wrong-entry: red;
+    --right-entry: green;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.left{
+    width: 45%;
+    height: 100vh;
+    background-image: url(../Sign-up_form/Resources/backimg.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.logo{
+    text-align: center;
+    font-family: 'norse-bold';
+    font-size: 70px;
+    background-color: black;
+    color: white;
+    opacity: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20%;
+}
+
+.logo img{
+    height: 80px;
+    width: 70px;
+}
+
+.right{
+    height: 100vh;
+    width: 55%;
+    background-color: white;
+    color: black;
+    font-family: 'Roboto';
+}
+
+.right .head1{
+    margin-top: 80px;
+    margin-left: var(--left-margin);
+    margin-right: var(--right-margin);
+    position: relative;
+}
+
+.right .head2{
+    margin-left: var(--left-margin);
+    margin-right: var(--right-margin);
+    position: relative;
+}
+
+.right .head3{
+    margin-left: var(--left-margin);
+    margin-right: var(--right-margin);
+    margin-top: 20px;
+    position: relative;
+}
+
+.right .head4{
+    margin-left: var(--left-margin);
+    margin-right: var(--right-margin);
+    margin-top: 30px;
+    position: relative;
+}
+
+.right form{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    position: relative;
+    margin-left: 50px;
+    margin-right: 200px;
+}
+
+.right form .details{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.right form .details input{
+    border-radius: 5px;
+    border: solid 1px #E5E7EB;
+    font-size: large;
+}
+
+.right form .details #fname:valid, .right form .details #lname:valid, .right form .details #email:valid, .right form .details #phone:valid{
+    border: solid 1px green;
+}
+
+.right form .details #fname:invalid, .right form .details #lname:invalid, .right form .details #email:invalid, .right form .details #phone:invalid{
+    border: solid 1px red;
+}
+
+.right form .details input:active{
+    border: solid 1px lightblue;
+}
+
+.right form .details label{
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.right form button{
+    background-color: #596D48;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    align-items: center;
+    font-size: 15px;
+}
+
+.lasthead{
+    margin-left: var(--left-margin);
+    margin-right: var(--right-margin);
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.lasthead .Login{
+    color: green;
+}

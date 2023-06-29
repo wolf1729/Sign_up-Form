@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign-Up Page</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="left">
+                <div class="logo">
+                    <img src="../Sign-up_form/Resources/odin-lined.png">
+                    <p>Build50</p>
+                </div>
+            </div>
+            <div class="right">
+                <p class="head1">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p class="head2">Sign up <em>now</em> to get started.</p>
+                <p class="head3">You <em>know</em> you want to!</p>
+                <p class="head4">Let's do this!</p>
+                <form>
+                    <div class="details">
+                        <label for="fname">FIRST NAME</label>
+                        <input type="text" id="fname" name="first_name" required>
+                    </div>
+                    <div  class="details">
+                        <label for="lname">LAST NAME</label>
+                        <input type="text" id="lname" name="last_name">
+                    </div>
+                    <div class="details">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="user_email" required>
+                    </div>
+                    <div class="details">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="number" id="phone" name="user_phone" min='10' max="12">
+                    </div>
+                    <div class="details">
+                        <label for="pass">PASSWORD</label>
+                        <input type="password" id="pass" name="user_pass" minlength="8" required>
+                    </div>
+                    <div class="details">
+                        <label for="conpass">CONFIRM PASSWORD</label>
+                        <input type="password" id="conpass" name="user_conpass" required>
+                    </div>
+                    <button type="submit" class="details">Create Account</button>
+                </form>
+                <p class="lasthead">You already have an account?<span class="Login">Login</span></p>
+            </div>
+        </div>
+    </body>
+</html>
